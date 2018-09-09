@@ -54,11 +54,19 @@ First line of institution2 address\\
 %%%%%%%%% BODY TEXT
 \section{Introduction}
 
+
 \section{Related Work}
+  Many auto or semi-auto dignose methods have been proposed to diagnose ROP plus disease. According to Aslam \etal~\cite{},  it takes three phrases to dignose,(1) image segmentation.With image processing algorithms to construct vascular tree; (2) measurement of vessel diameter. It is a challenge that describe vessel's thickness and location exactly, cause that the process is subjective, reliable; (3) measurement of tortuosity. with varied algorithms to evaluate tortuosity of blood vessel result in different results.
+
+  Nowadays, cause of the excellent results Convolution Neural network(CNN) has achieved, more and more researchers start to focus on how to apply CNN on medical image process field, ROP images is no exception. Worrall \etal proposed a novel CNN architecture to diagnose ROP plus disease(waiting to complete). Brown \etal ~\cite{} use two CNN to diagnose ROP plus disease, the first CNN is vessel segmentation network, which is used to segment retinal vessel through output a probability map whose size is same as input image and the value is between 0 to 1. The second CNN is classification network whose architecture adopts Inception version1 ~\cite{} architecture.
+
+  Above of all,
+  Every method mentioned above is to to dignose the existence of ROP plus disease, or calssify normal, pre-plus, plus
+  disease. In this article, we develop a novel neural network, through enhance the ability of feature map represent feature on every layer in CNN, which is described on the next section. with this network to diagnose the existence and severity of ROP gain state-of-the-art result.
 
 \section{Data and Methodology}
 \subsection{Data}
-	Our data comes from Sichuang Provincial Peoples Hospital and Chengdu Women \& Childern's Central Hospital, which contains xxx ROP examination from 2014 to 2017. Every examination consists of 4 to 12 retinal photographs, which reflects each premature infant's fundus situation.
+	Our data comes from Sichuang Provincial Peoples Hospital and Chengdu Women \& Childern's Central Hospital, which contains xxx ROP examinations from 2014 to 2017. Every examination consists of 4 to 12 retinal photographs, which reflects each premature infant's fundus situation.
   which annotated by two professional ophtahalmologists.
 
   First of all, we develop online label system to help ophtahalmologists annotate data, ophtahalmologist label on each examination, Figure 3.1 displays the detail of inspecting fundus photograph on label system, ophtahalmologist enable adjust brightness, saturation and contractness of retinal fundus photograph, and also we provide the draw line tools to aid ophtahalmologist caculate the distance between optic disc and "ridge/valley traversal", and the length of "ridge/valley traversal". Both of them assist ophtahalmologist diagnose the existence of ROP and severity of ROP certainly.
@@ -68,7 +76,7 @@ First line of institution2 address\\
   Last, we divide all images into three sets, training sets, validation sets and testing sets respectively. Table 3.1 displays data distribution on every sets.
 
 \subsection{Vessel Segmentation}
-  Ophtahalmologist generally regard tuotorsity of premature infants fundus image as one of most important standard to diagnose ROP, in fact, premature infants' retinal vessel haven't develop mature, when they separate themselves from maternal enviorment. And the infants unable to breath their own need artificial oxygen, which high concentration oxygen causes tuotorsity of retinal vessel, become ROP finally.
+  Ophtahalmologist generally regard tortuosity of premature infants fundus image as one of most important standard to diagnose ROP, in fact, premature infants' retinal vessel haven't develop mature, when they separate themselves from maternal enviorment. And the infants unable to breath their own need artificial oxygen, which high concentration oxygen causes tortuosity of retinal vessel, become ROP finally.
 
   We try to utilize u-net~\cite{02} to segment vessel of fundus images. U-net is a symmetrical image segmentation framework, its left side consists of many modules serially, which every module has same construction, two $3\times3$ convolution operation used as feature extraction, one $2\times2$ max pooling operation used as downsampling. so does the right side, except for deconvolution operation is adopted to replace convolution operation. U-net uses skip connection fuse low level and high level features, which contributes to looking for dense and hierarchical image features.
 
@@ -93,6 +101,9 @@ First line of institution2 address\\
 
 \subsection{Transfer Learning}
     "Transfer Learning" has been proved an effective method to train model, especially, the dataset is not very big. First of all, according to different tasks, we train classical popular models like InceptionV2 on big dataset, \eg ImageNet for image classification task, Pascal VOC dataset for image segmentation task, and CelebA for Face Detection. Secondly, we transfer parameters $\theta$ from these models to our own model respectively, through initializes $\theta$ on map function $f(y;x, \theta)$.
+
+\subsection{Convolution and Pooling}
+
 
 \subsection{Date}
 Computational Visual Media Conference will be held on xxx to xxx.
