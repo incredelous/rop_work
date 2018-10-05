@@ -1,8 +1,14 @@
-\backcite {Alpher02}{{2}{2.4}{subsection.2.4}}
-\backcite {Alpher03}{{2}{2.4}{subsection.2.4}}
-\backcite {Alpher04}{{2}{2.4}{subsection.2.4}}
-\backcite {Alpher03}{{2}{2.4}{subsection.2.4}}
-\backcite {Alpher03}{{2}{2.4}{subsection.2.4}}
-\backcite {Alpher03,Alpher02,Authors12}{{2}{2.4}{subsection.2.4}}
-\backcite {Alpher02,Alpher03,Authors12}{{2}{2.4}{subsection.2.4}}
-\backcite {Authors12}{{2}{2.5}{subsection.2.5}}
+\backcite {}{{1}{2}{section.2}}
+\backcite {}{{1}{2}{section.2}}
+\backcite {}{{1}{2}{section.2}}
+\backcite {Alpher01}{{2}{3.1}{subsection.3.1}}
+\backcite {02}{{2}{3.2}{subsection.3.2}}
+\backcite {03, 04, 05, 06}{{2}{3.3}{subsection.3.3}}
+\backcite {Alpher02}{{3}{3.7}{subsection.3.7}}
+\backcite {Alpher03}{{3}{3.7}{subsection.3.7}}
+\backcite {Alpher04}{{3}{3.7}{subsection.3.7}}
+\backcite {Alpher03}{{3}{3.7}{subsection.3.7}}
+\backcite {Alpher03}{{3}{3.7}{subsection.3.7}}
+\backcite {Alpher03,Alpher02,Authors12}{{3}{3.7}{subsection.3.7}}
+\backcite {Alpher02,Alpher03,Authors12}{{3}{3.7}{subsection.3.7}}
+\backcite {Authors12}{{3}{3.8}{subsection.3.8}}

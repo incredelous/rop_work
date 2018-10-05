@@ -89,35 +89,30 @@ First line of institution2 address\\
 \subsection{Classification Network}
   Since 2014, Google proposed Inception network architecture continuely~\cite{03, 04, 05, 06}, which imporved the best published result on ImageNet again and again. The successful secret of Inception network is a module named "Inception module" is proposed. Different from traniditional convolutional network, Inception network used a "Inception module"  as a layer. And the inventor of Inception network extend the width of "Inception module" with use different sizes of kernel to extract different spatial features, which superior than traniditional hierarchical convolutional network in performace.
 
-  \emph{Median Frequency Balancing}: Consider that dataset is imbalanced, the number of normal samples is much more than ROP samples. We use median frequency balancing on loss function to deal with such problem. According to median frequency balancing, ${\alpha}_c$ denotes coordinate of class $c$ while training, \eg $ total loss = \sum_1^{n} {{{\alpha}_c} \dot loss(c)}$, which is formulated as:
+  \emph{Median Frequency Balancing}: Consider that dataset is imbalanced, the number of normal samples is much more than ROP samples. We use median frequency balancing on loss function to deal with such problem. According to median frequency balancing, ${\alpha}_c$ denotes coordinate of class $c$ while training, \eg $ total loss = \sum_1^{n} {{{\alpha}_c} \cdot loss(c)}$, which is formulated as:
   \begin{math}
     {\alpha}_c = \frac{median freq}{freq(c)}
   \end{math}
 
   $freq(c)$ denotes the number of class $c$ divided set number, and $median_freq$ is the median of all frequencies of classes. For binary classification tasks, we can formulate median frequency balancing as:
   \begin{math}
-    {\alpha}_p = \frac{n + p}{2 \dot p}
-    {\alpha}_n = \frac{n + p}{2 \dot n}
+    {\alpha}_p = \frac{n + p}{2 \cdot p}
+    {\alpha}_n = \frac{n + p}{2 \cdot n}
   \end{math}
 
   ${\alpha}_p$ denotes frequency of positive samples, ${\alpha}_n$ denotes frequency of negative samples, and $p, n$ denotes the number of positive and negative samples.
 
 \subsection{Transfer Learning}
-    "Transfer Learning" has been proved an effective method to train model, especially, the dataset is not very big. First of all, according to different tasks, we train classical popular models like InceptionV2 on big dataset, \eg ImageNet for image classification task, Pascal VOC dataset for image segmentation task, and CelebA for Face Detection. Secondly, we transfer parameters $\theta$ from these models to our own model respectively, through initializes $\theta$ on map function $f(y;x, \theta)$.
+    % "Transfer Learning" has been proved an effective method to train model, especially, the size of dataset is not very big.
+    The primary aim of "Transfer Learning" is proposed to save manual labeling costs with transferring model parameters from labeled dataset to unlabeled dataset. However, considering the difficulties to collect large scale data and cost to label data, more researches gradually to focus on transferring model parameters on two domains, one domain possesses labeled large scale avilable data, but the other don't.
+
+    Let's give definitions of task and domain firstly. Domain contains feature space $\chi$ and Edge probability distribution $p(X)$ where $X = {x_1, x_2, ..., x_n}\in{\chi}$, and task contains label space $\gamma$ and target prediction function $f(\cdot)$, which is conditional probability distribution $p(Y|X)$. Accordingly, we have the definition of "Transfer Learning". Given a source domain $D_s$, a target domain $D_t$, a source task $T_s$ and a target task $T_t$, transfer learning applies the knowledge which has been learned from $D_s$ and $T_s$ to help learn prediction function ${f_t}(\cdot)$ on domain $D_t$.
+
+    On the basis of the difference of domain and task, transfer learning can be partition as inductive transfer learning, transductive transfer learning and unsupervised transfer learning. In inductive transfer learning, we believe $T_s != T_t$, and not care relationship between $D_s$ and $D_t$. It utilizes labeled large scale data on domain $D_s$ to train a objective model, and then transfer the parameters to $D_t$ for improving performace on $T_t$; In transductive tranfer learning, $T_t$ is same as $T_s$, but $D_t$ is not same as $D_s$, mainly considering the difference of feature space or edge probability distribution; In unsupervised tranfer learning, it focus on unsupervised learning, \eg clustering, dimensionality reduction, density estimation. ImageNet, cifar-10, CelebA, ... all these are good materials for transfer learning.
+    % According to different tasks, first of all, we train classical popular models like InceptionV2 on big dataset, \eg ImageNet for image classification task, Pascal VOC dataset for image segmentation task, and CelebA for Face Detection. Secondly, we transfer parameters ${\theta}^'$ from these models to our own model respectively, through initializes $\theta$ on map function $f(y;x, \theta)$ with ${\theta}^'$.
+    % At last, what we need is to fine tune parameters with our own dataset.
 
 \subsection{Convolution and Pooling}
-
-
-\subsection{Date}
-Computational Visual Media Conference will be held on xxx to xxx.
-
-\subsection{Language}
-English is the official language of the conference.
-
-\section{About the paper submission}
-
-\subsection{Paper length}
-cvm papers may be between 4 pages and 14 pages. Over length papers will simply not be reviewed.
 
 %-------------------------------------------------------------------------
 \subsection{Draft and final copy}
@@ -126,15 +121,6 @@ version submitted for review.  The ruler is provided in order that
 reviewers may comment on particular lines in the paper without
 circumlocution. The camera ready copy should not contain a ruler.
 (\LaTeX\ users may uncomment the \verb'\cvmfinalcopy' command in the document preamble.)
-
-\subsection{Blind review}
-Many authors misunderstand the concept of anonymizing for blind
-review.  Blind review does not mean that one must remove
-citations to one's own work---in fact it is often impossible to
-review a paper unless the previous citations are known and
-available.
-Blind review means that you do not use the words ``my'' or ``our''
-when citing previous work.
 
 \begin{figure}[t]
 \begin{center}

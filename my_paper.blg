@@ -3,9 +3,15 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: my_paper.aux
 The style file: cvm.bst
 Database file #1: cvmbib.bib
+Warning--I didn't find a database entry for "Alpher01"
+Warning--I didn't find a database entry for "02"
+Warning--I didn't find a database entry for "03"
+Warning--I didn't find a database entry for "04"
+Warning--I didn't find a database entry for "05"
+Warning--I didn't find a database entry for "06"
 You've used 4 entries,
             2120 wiz_defined-function locations,
-            524 strings with 4109 characters,
+            531 strings with 4135 characters,
 and the built_in function-call counts, 1223 in all, are:
 = -- 123
 > -- 45
@@ -44,3 +50,4 @@ warning$ -- 0
 while$ -- 14
 width$ -- 5
 write$ -- 45
+(There were 6 warnings)
