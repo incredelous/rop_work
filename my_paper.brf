@@ -1,14 +1,18 @@
+\backcite {Chen J, Smith L E H.}{{1}{1}{section.1}}
+\backcite {Gilbert C, Fielder A, Gordillo L, et al.}{{1}{1}{section.1}}
+\backcite {Wilkinson AR, Haines L, Head K, Fielder AR.}{{1}{1}{section.1}}
+\backcite {Fierson WM.}{{1}{1}{section.1}}
 \backcite {}{{1}{2}{section.2}}
 \backcite {}{{1}{2}{section.2}}
-\backcite {}{{1}{2}{section.2}}
+\backcite {}{{2}{2}{section.2}}
 \backcite {Alpher01}{{2}{3.1}{subsection.3.1}}
 \backcite {02}{{2}{3.2}{subsection.3.2}}
 \backcite {03, 04, 05, 06}{{2}{3.3}{subsection.3.3}}
-\backcite {Alpher02}{{3}{3.7}{subsection.3.7}}
-\backcite {Alpher03}{{3}{3.7}{subsection.3.7}}
-\backcite {Alpher04}{{3}{3.7}{subsection.3.7}}
-\backcite {Alpher03}{{3}{3.7}{subsection.3.7}}
-\backcite {Alpher03}{{3}{3.7}{subsection.3.7}}
-\backcite {Alpher03,Alpher02,Authors12}{{3}{3.7}{subsection.3.7}}
-\backcite {Alpher02,Alpher03,Authors12}{{3}{3.7}{subsection.3.7}}
-\backcite {Authors12}{{3}{3.8}{subsection.3.8}}
+\backcite {Alpher02}{{3}{3.6}{subsection.3.6}}
+\backcite {Alpher03}{{3}{3.6}{subsection.3.6}}
+\backcite {Alpher04}{{3}{3.6}{subsection.3.6}}
+\backcite {Alpher03}{{3}{3.6}{subsection.3.6}}
+\backcite {Alpher03}{{3}{3.6}{subsection.3.6}}
+\backcite {Alpher03,Alpher02,Authors12}{{3}{3.6}{subsection.3.6}}
+\backcite {Alpher02,Alpher03,Authors12}{{3}{3.6}{subsection.3.6}}
+\backcite {Authors12}{{3}{3.7}{subsection.3.7}}

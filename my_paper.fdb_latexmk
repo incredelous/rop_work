@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex my_paper"] 1538745528 "my_paper.aux" "my_paper.bbl" "my_paper" 1538745533
+["bibtex my_paper"] 1539005461 "my_paper.aux" "my_paper.bbl" "my_paper" 1539005465
   "./cvm.bst" 1332839018 20369 1ebd2521c26178f5668c5eb89e950272 ""
   "cvmbib.bib" 1332942344 942 2b5118edb3bbbd959cee1802f56c9128 ""
-  "my_paper.aux" 1538745533 3872 b84999faa9e715030a13fb9ca9aba9f9 ""
+  "my_paper.aux" 1539005465 4279 e62cdd4a4277c785c1aaa767ee6151a9 ""
   (generated)
   "my_paper.blg"
   "my_paper.bbl"
-["pdflatex"] 1538745531 "my_paper.tex" "my_paper.pdf" "my_paper" 1538745533
+["pdflatex"] 1539005462 "my_paper.tex" "my_paper.pdf" "my_paper" 1539005465
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1525924704 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1525924995 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1525924558 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -50,6 +50,7 @@
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1525924050 35752 024fb6c41858982481f6968b5fc26508 ""
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1525924050 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1525924050 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1525924050 32716 08e384dc442464e7285e891af9f45947 ""
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1525924050 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "c:/texlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1525924558 45758 19968a0990191524e34e1994d4a31cb6 ""
   "c:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb" 1525925170 35941 adef23a721dd8354a4a2bf4434f1c484 ""
@@ -110,12 +111,12 @@
   "cvm.sty" 1400295078 8111 8284e6f468513468c928ad5ea03eff80 ""
   "cvm_eso.sty" 1131567568 3987 6aa7c08ff2621006e0603349e40a30a8 ""
   "eso-pic.sty" 1332838812 9720 6f9081a608885e3b59039ebec1221ab9 ""
-  "my_paper.aux" 1538745533 3872 b84999faa9e715030a13fb9ca9aba9f9 ""
-  "my_paper.bbl" 1538745531 662 4b7f2237cc2d43c1b897b2db8883c575 "bibtex my_paper"
-  "my_paper.brf" 1538745533 652 e53c673f11183a057bb287887b60d9d8 ""
-  "my_paper.tex" 1538745495 15680 3ec474efd15552faec87813423f9ce91 ""
+  "my_paper.aux" 1539005465 4279 e62cdd4a4277c785c1aaa767ee6151a9 ""
+  "my_paper.bbl" 1539005462 662 4b7f2237cc2d43c1b897b2db8883c575 "bibtex my_paper"
+  "my_paper.brf" 1539005465 894 f4ec0b141e9ed7dbfc61c3bbbc80678f ""
+  "my_paper.tex" 1539005418 18011 c8790eb24eeac2c4a2a2d5bf104c5343 ""
   (generated)
-  "my_paper.aux"
-  "my_paper.log"
   "my_paper.pdf"
+  "my_paper.log"
   "my_paper.brf"
+  "my_paper.aux"

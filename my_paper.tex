@@ -49,13 +49,21 @@ First line of institution2 address\\
 %%%%%%%%% ABSTRACT
 \begin{abstract}
     ROP(Retinopathy of Prematurity) is a blinding disease, which primarily occurs on premature infants whose birth weights about 1250 grams or gestation less than 31 weeks.
-    Premature infants in advance separate theirselves from the maternal environment to receive artificial oxygen, the development of the blood vessels are very sensitive to high concentrations of oxygen, resulting in retinal vascular hyperplasia, even resulting in ROP.
+    Premature infants in advance separate theirselves from the maternal environment to receive artificial oxygen, the development of the blood vessels are very sensitive to high oxygen concentrations, resulting in retinal vascular hyperplasia, even resulting in ROP.
     Nowadays, in many developing countries, it would take much time and energy to train an ophthalmologist, which means making ROP diagnosis on each premature infant is not realistic. In order to overcome this dilemma, we have developed an automation system to analyse premature infant retinal photographs using deep nerual network, judging the existence and the severity of ROP.
     The initial aim of our system is to help these premature infants who can not get the diagnosis of professsional ophtalmologist, make them enjoy equal treatment like those born in big cities.
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
 \section{Introduction}
+Retinopathy of prematurity (ROP) is a potentially blinding eye disorder that primarily affects premature infants weighing about 2¾ pounds (1250 grams) or less that are born before 31 weeks of gestation (A full-term pregnancy has a gestation of 38–42 weeks). The smaller a baby is at birth, the more likely that baby is to develop ROP. Nowadays,
+ROP has become a major cause of blindness in children in the developing and developed world despite current surgical treatment in the late-stage of the disease\cite{Chen J, Smith L E H.}.
+ROP is a proliferative retinal vascular disease that occurs when abnormal blood vessels grow and spread throughout the retina. If a baby is born prematurely, before these blood vessels have reached the edges of the retina, normal vessel growth may stop. The edges of the retina may not get enough oxygen and nutrients. Scientists believe that the periphery of the retina then sends out signals to other areas of the retina for nourishment.
+As a result, new abnormal vessels begin to grow. These new blood vessels are fragile and weak and can bleed, leading to retinal scarring. When these scars shrink, they pull on the retina, causing it to detach from the back of the eye.
+The available data suggest that blindness due ROP varies enormously from country to country, and that over 50,000 children are blind from ROP worldwide\cite{Gilbert C, Fielder A, Gordillo L, et al.}. Eighty percent of infants with birth weight less than
+1500 g born in the United Kingdom survive and the incidence of stage 3 ROP of approximately 8\% to 10\% has been reported\cite{Wilkinson AR, Haines L, Head K, Fielder AR.}. Thus all babies having gestational age ≤ 31 wk or ≤ 1500 g are screened in United Kingdom[18]. American guidelines given by the American Academy of Pediatrics state that,
+infants with a birth weight ≤ 1500 g or gestational age of ≤ 30 wk and selected infants with a birth weight between 1500 and 2000 g or gestational age of more than 30 wk with an unstable clinical course, should be screened for ROP\cite{Fierson WM.}. In China, National Ministry of Health promulgated the "guide for the prevention and treatment of premature infants with oxygen and retinopathy", birth weight of less than 2000 g, gestational age less than 37 wk of preterm infants should be screened.
+Screening process mainly depends on new born infants' fundus image 
 
 
 \section{Related Work}
@@ -79,7 +87,7 @@ First line of institution2 address\\
   Last, we divide all images into three sets, training sets, validation sets and testing sets respectively. Table 3.1 displays data distribution on every sets.
 
 \subsection{Vessel Segmentation}
-  Ophtahalmologist generally regard tortuosity of premature infants fundus image as one of most important standard to diagnose ROP, in fact, premature infants' retinal vessel haven't develop mature, when they separate themselves from maternal enviorment. And the infants unable to breath their own need artificial oxygen, which high concentration oxygen causes tortuosity of retinal vessel, become ROP finally.
+  Ophtahalmologist generally regard tortuosity of premature infants fundus image as one of most important standard to diagnose ROP, in fact, premature infants' retinal vessel haven't develop mature, when they separate themselves from maternal enviorment. And the infants unable to breath their own need artificial oxygen, which high oxygen concentrations  causes tortuosity of retinal vessel, become ROP finally.
 
   We try to utilize u-net~\cite{02} to segment vessel of fundus images. U-net is a symmetrical image segmentation framework, its left side consists of many modules serially, which every module has same construction, two $3\times3$ convolution operation used as feature extraction, one $2\times2$ max pooling operation used as downsampling. so does the right side, except for deconvolution operation is adopted to replace convolution operation. U-net uses skip connection fuse low level and high level features, which contributes to looking for dense and hierarchical image features.
 
@@ -112,7 +120,7 @@ First line of institution2 address\\
     % According to different tasks, first of all, we train classical popular models like InceptionV2 on big dataset, \eg ImageNet for image classification task, Pascal VOC dataset for image segmentation task, and CelebA for Face Detection. Secondly, we transfer parameters ${\theta}^'$ from these models to our own model respectively, through initializes $\theta$ on map function $f(y;x, \theta)$ with ${\theta}^'$.
     % At last, what we need is to fine tune parameters with our own dataset.
 
-\subsection{Convolution and Pooling}
+
 
 %-------------------------------------------------------------------------
 \subsection{Draft and final copy}
